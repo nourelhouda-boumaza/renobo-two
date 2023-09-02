@@ -23,7 +23,7 @@ body { margin: 0; padding: 0; }
     const map = new mapboxgl.Map({
         container: 'map',
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/mapbox/light-v11',
+        style: 'mapbox://styles/mapbox/dark-v11',
         center: { lng: -122.43071924561035, lat: 37.806738206553305},
         zoom: 15.4,
         pitch: 64.9,
@@ -52,7 +52,7 @@ body { margin: 0; padding: 0; }
                 const options = {
                     obj: 'buildspace_structure_raw3d_scale_gltf.gltf',
                     type: 'gltf',
-                    scale: { x: 5, y: 5, z: 5 },
+                    scale: { x: 100, y: 100, z: 100 },
                     units: 'meters',
                     rotation: { x: 90, y: -90, z: 0 }
                 };
