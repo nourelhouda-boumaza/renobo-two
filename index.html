@@ -24,7 +24,7 @@ body { margin: 0; padding: 0; }
         container: 'map',
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
         style: 'mapbox://styles/mapbox/light-v11',
-        center: { lng: -73.97627, lat: 40.75155 },
+        center: { lng: -122.43071924561035, lat: 37.806738206553305},
         zoom: 15.4,
         pitch: 64.9,
         bearing: 172.5,
@@ -58,7 +58,7 @@ body { margin: 0; padding: 0; }
                 };
 
                 tb.loadObj(options, (model) => {
-                    model.setCoords([-73.976799, 40.754145]);
+                    model.setCoords([-122.43071924561035, 37.806738206553305]);
                     model.setRotation({ x: 0, y: 0, z: 241 });
                     tb.add(model);
                 });
