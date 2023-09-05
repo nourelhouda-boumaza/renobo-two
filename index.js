@@ -14,6 +14,16 @@ const map = new mapboxgl.Map({
   antialias: true // create the gl context with MSAA antialiasing, so custom layers are antialiased
 });
 
+// Add the control to the map.
+map.addControl(
+  new MapboxGeocoder({
+  accessToken: mapboxgl.accessToken,
+  mapboxgl: mapboxgl,
+  marker: {
+    color: 'white' // Set the marker color to your desired color
+}
+  })
+  );
 // Define the flyToBuilding function
 function flyToBuilding(coordinates) {
   map.flyTo({
