@@ -1,34 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* Ensure the page takes up at least the viewport height */
 }
 
-.page-container {
-  flex-grow: 1;
-  /* Expand to fill remaining space */
-  background-color: black;
-  color: white;
-  /* Text color inside the div */
-}
+#map {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 
-.navbar-custom {
-  background-color: black !important; /* Change the background color to black */
-  color: white !important;
 }
-
 .content-card {
-  background-color: #343A40;
+  background: #343A40;
   border-radius: 0.5rem;
+  float: right;
   width: 30%;
-  height: 50%;
+  height: auto;
   margin: 1%;
   padding: 1%;
   box-shadow: 0px 0px 10px rgba(52, 58, 64, 0.5); 
+  
 }
 .content-card:hover{
   background-color: #454545;
+  color: white;
 }
+
+.titre{
+  font-family: 'Roboto Bold 700', sans-serif;
+  font-size: 30px;
+  margin: 0% !important;
+}
+.paragraph{
+  font-family: 'Roboto Light 300', sans-serif;
+  
+
+}
+.padding{
+  padding: 5%;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.lien{
+  background-color: transparent !important;
+  width: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.lien:hover{
+  background-color: transparent !important;
+}
+.nav-title{
+  font-family: 'Roboto Black 900', sans-serif;
+  font-weight: bold;
+  
+}
+
+
